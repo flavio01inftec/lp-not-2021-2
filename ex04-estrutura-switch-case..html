@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 03</title>
+    <script>
+        let num_1 = Number(prompt('Digite o primeiro número:'))
+        let num_2 = Number(prompt('Digite o segundo número:'))
+        let ope = prompt('Digite a Operação \n [+] Adição \n [-] Subtração \n [*] Multiplicação \n [/] Divisão')
+        let resultado
+
+
+        if (isNaN(num_1) || isNaN(num_2)) {
+            alert('ERRO: Valor incorreto informado!')
+        }
+
+        else{
+            switch (ope){
+                case '+':
+                    document.write(num_1 + num_2)
+                    break
+
+                case '-':
+                    document.write(num_1 - num_2)
+                    break
+
+                case '*':
+                case 'x':
+                case 'X':
+                    document.write(num_1 * num_2)
+                    break
+
+                case '/':
+                case ':':
+                    document.write(num_1 + num_2)
+                    break
+
+                default:
+                    alert('ERRO: Operador Inválido!')
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
