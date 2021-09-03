@@ -12,9 +12,8 @@
             comprimento = parseInt(prompt('Informe a quilimetragem:'))
         } while (isNaN(comprimento) || comprimento <= 200);
 
-        let km = 1
+        for (let km = 1; km <= comprimento  ; km++) {
 
-        while (km <= comprimento) {
             if (km % 31 === 0) {
                 document.write(`Possui pedágio no km ${km}<br>`)
             }
@@ -22,7 +21,6 @@
             if(km % 23 === 0) {
                 document.write(`Possui posto de atendimento no km ${km}<br>`)
             }
-            km++
 
         }
         
